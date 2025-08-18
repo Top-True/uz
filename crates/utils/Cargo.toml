@@ -1,7 +1,6 @@
 [package]
-name = "uz-core"
+name = "utils"
 version = "0.0.0"
 edition = "2024"
 
 [dependencies]
-utils = { workspace = true }

@@ -1,7 +1,9 @@
 [package]
-name = "uz-core"
+name = "utils-macros"
 version = "0.0.0"
 edition = "2024"
 
+[lib]
+proc-macro = true
+
 [dependencies]
-utils = { workspace = true }

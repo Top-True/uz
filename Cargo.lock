@@ -3,9 +3,29 @@
 version = 4
 
 [[package]]
+name = "pollster"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2f3a9f18d041e6d0e102a0a46750538147e5e8992d3b4873aaafee2520b00ce3"
+
+[[package]]
+name = "utils"
+version = "0.0.0"
+
+[[package]]
+name = "utils-macros"
+version = "0.0.0"
+
+[[package]]
 name = "uz"
 version = "0.0.0"
+dependencies = [
+ "pollster",
+]
 
 [[package]]
 name = "uz-core"
 version = "0.0.0"
+dependencies = [
+ "utils",
+]
