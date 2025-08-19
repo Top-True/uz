@@ -11,3 +11,5 @@ pub const fn hash128(s: &str) -> u128 {
     }
     hash
 }
+
+pub use const_random::const_random;

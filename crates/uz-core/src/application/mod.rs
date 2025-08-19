@@ -20,7 +20,7 @@ impl Builder {
         }
     }
 
-    pub fn add_species(&mut self, species: species::MetaInfo) {
+    pub fn add_species(&mut self, species: species::MetaInfo) -> Self {
         todo!()
     }
 
@@ -36,7 +36,7 @@ impl Handle {
         todo!()
     }
 
-    pub async fn new_active_handle(self) -> ActiveHandle {
+    pub async fn new_active_handle(self) -> Result<ActiveHandle, ()> {
         todo!()
     }
 }

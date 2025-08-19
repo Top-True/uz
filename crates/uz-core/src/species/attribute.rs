@@ -39,8 +39,8 @@ impl DataArray {
 }
 
 pub(crate) struct DataMapInner {
-    fields_data: Vec<(Name, DataArray)>,
     children_data: Vec<(Name, DataMapInner)>,
+    fields_data: Vec<(Name, DataArray)>,
 }
 
 pub(crate) struct DataMap {
