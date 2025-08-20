@@ -117,6 +117,10 @@ dependencies = [
 [[package]]
 name = "utils-macros"
 version = "0.0.0"
+dependencies = [
+ "quote",
+ "syn",
+]
 
 [[package]]
 name = "uz"

@@ -2,9 +2,19 @@ use std::thread;
 use std::time::Duration;
 use uz::prelude::*;
 
-species!(pub Ball <> {
+struct Position {
     x: i32,
     y: i32,
+}
+
+struct Velocity {
+    x: i32,
+    y: i32,
+}
+
+species!(Ball <> {
+    position: Position,
+    velocity: Velocity,
 });
 
 fn main() {

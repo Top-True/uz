@@ -1,8 +1,7 @@
 pub mod argument;
 pub mod parameter;
 
-pub trait Law {
-    fn parameters(&self) -> parameter::Parameters;
-
-    fn execute(&self, arguments: argument::Arguments);
+pub struct LawDefinition {
+    pub(crate) parameters: parameter::Parameters,
+    pub(crate) execute_func: fn(arguments: argument::Arguments),
 }

@@ -1,10 +1,13 @@
 use crate::species;
 use std::collections::LinkedList;
 
+pub mod database;
+pub mod executor;
 pub mod plugin;
+pub mod static_variables;
 
 pub(crate) struct Application {
-    universe_data: Vec<species::attribute::DataMap>,
+    database: database::Database,
 }
 
 pub struct Builder {
