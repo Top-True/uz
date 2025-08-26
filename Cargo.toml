@@ -1,23 +1,23 @@
 [package]
 name = "uz"
 version = "0.0.0"
-edition = "2024"
+edition = { workspace = true }
 
 [workspace]
 resolver = "3"
 members = ["crates/*"]
 
+[workspace.package]
+edition = "2024"
+
 [workspace.dependencies]
 uz-core = { path = "crates/uz-core" }
 uz-macros = { path = "crates/uz-macros" }
 utils = { path = "crates/utils" }
-utils-macros = { path = "crates/utils-macros" }
 
 [dev-dependencies]
-pollster = "0.4.0"
 
 [dependencies]
 uz-core = { workspace = true }
 uz-macros = { workspace = true }
 utils = { workspace = true }
-utils-macros = { workspace = true }

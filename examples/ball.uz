@@ -1,0 +1,7 @@
+use crate::{ Size, Velocity, Position };
+
+spec Ball( Size, Velocity, Position );
+
+law Movement{ spec Target(in Velocity, out Position) };
+
+law Impact{ spec Targets[ 2; in Size, in Position, out Velocity ]  };
